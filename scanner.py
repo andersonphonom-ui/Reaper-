@@ -4,11 +4,11 @@ from rich.console import Console
 from rich.table import Table
 from rich import box
 
-from modules.sqli    import test_sqli
-from modules.xss     import test_xss
-from modules.headers import test_headers
-from modules.admin   import test_admin
-from modules.files   import test_files
+from sqli    import test_sqli
+from xss     import test_xss
+from headers import test_headers
+from admin   import test_admin
+from files   import test_files
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 console = Console()
